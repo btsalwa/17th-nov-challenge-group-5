@@ -16,18 +16,18 @@ return A;
 
 
 
-function solution(A) {
-    let result = 0;
+function findUnpairedElement(A) {
+  let result = 0;
 
-    
-    for (let i = 0; i < A.length; i++) {
-        result ^= A[i];
-    }
+  for (let i = 0; i < A.length; i++) {
+    result ^= A[i];
+  }
 
-    return result;
+  return result;
 }
 
+// Example usage:
+const oddArray = [9, 3, 9, 3, 7, 9, 7];
+const unpairedElement = findUnpairedElement(oddArray);
 
-const exampleArray = [9, 3, 9, 3, 9, 7, 9];
-const unpairedElement = solution(exampleArray);
 console.log("Unpaired Element:", unpairedElement);
